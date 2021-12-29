@@ -4,6 +4,35 @@ $secondary-color: #1ac888;
 $error-color: #d32752;
 $info-color: #f6c31c;
 
+// color pallette
+$colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "error": $error-color,
+  "info": $info-color,
+  "blue": #1919e6,
+  "red": #e61919,
+  "yellow": #e6e619,
+  "green": #19e635,
+  "orange": #ffa600,
+  "purple": #9900ff,
+  "gray": #808080,
+  "black": black,
+  "white": white,
+);
+
+/* @debug map-get($colors, "purple");
+@debug map-has-key($colors, "secondary");
+@debug map-has-key($colors, "tertiary");
+@debug map-remove($colors, "primary");
+@debug map-merge(
+  $colors,
+  (
+    "pink": #ffc0cb,
+  )
+);
+  */
+
 // spacing
 $base-spacing: 0.75rem;
 
