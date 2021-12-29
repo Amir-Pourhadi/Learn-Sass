@@ -6,7 +6,7 @@ function buildStyles() {
 }
 
 function watchStyles() {
-  return watch(["index.scss"], buildStyles);
+  return watch("index.scss", buildStyles);
 }
 
 exports.default = series(buildStyles, watchStyles);
