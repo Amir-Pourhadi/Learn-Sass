@@ -1,0 +1,9 @@
+{
+  "name": "learn-sass",
+  "version": "1.0.0",
+  "description": "The Net Ninja's Sass Tutorial",
+  "main": "index.html",
+  "author": "Amir Pourhadi <AmirPourhadi@outlook.com>",
+  "license": "MIT",
+  "private": true
+}
