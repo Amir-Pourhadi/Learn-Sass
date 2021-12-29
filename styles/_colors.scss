@@ -3,8 +3,22 @@
     color: $val;
   }
 
+  .text-hover-#{$key} {
+    &:hover {
+      background-color: $val;
+      color: white;
+    }
+  }
+
   .bg-#{$key} {
     background-color: $val;
+  }
+
+  .bg-hover-#{$key} {
+    &:hover {
+      background-color: white;
+      color: $val;
+    }
   }
 
   @if ($key != "black" and $key != "white") {
@@ -13,8 +27,23 @@
       .text-#{$key}-light-#{$i} {
         color: mix(white, $val, $i * 10);
       }
+
+      .text-hover-#{$key}-light-#{$i} {
+        &:hover {
+          background-color: mix(white, $val, $i * 10);
+          color: white;
+        }
+      }
+
       .bg-#{$key}-light-#{$i} {
         background-color: mix(white, $val, $i * 10);
+      }
+
+      .bg-hover-#{$key}-light-#{$i} {
+        &:hover {
+          color: mix(white, $val, $i * 10);
+          background-color: white;
+        }
       }
     }
 
@@ -23,8 +52,23 @@
       .text-#{$key}-dark-#{$i} {
         color: mix(black, $val, $i * 10);
       }
+
+      .text-hover-#{$key}-dark-#{$i} {
+        &:hover {
+          background-color: mix(black, $val, $i * 10);
+          color: black;
+        }
+      }
+
       .bg-#{$key}-dark-#{$i} {
         background-color: mix(black, $val, $i * 10);
+      }
+
+      .bg-hover-#{$key}-dark-#{$i} {
+        &:hover {
+          color: mix(black, $val, $i * 10);
+          background-color: white;
+        }
       }
     }
   }
