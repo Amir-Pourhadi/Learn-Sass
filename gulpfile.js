@@ -3,14 +3,14 @@ const sass = require("gulp-sass")(require("sass"));
 const purgecss = require("gulp-purgecss");
 
 function buildStyles() {
-  return src("styles/**/*.scss")
+  return src("sass/**/*.scss")
     .pipe(sass())
     .pipe(purgecss({ content: ["*.html"] }))
     .pipe(dest("css"));
 }
 
 function watchStyles() {
-  return watch(["styles/**/*.scss", "*.html"], buildStyles);
+  return watch(["sass/**/*.scss", "*.html"], buildStyles);
 }
 
 exports.default = series(buildStyles, watchStyles);
