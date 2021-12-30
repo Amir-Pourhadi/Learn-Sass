@@ -2,12 +2,19 @@
   width: 100%;
 }
 
-.navbar {
+%navbar {
   @extend %flex-layout;
   padding: $base-spacing $base-spacing * 2;
   box-shadow: $base-box-shadow;
 
   .site-title {
     font-size: $font-size-lg;
+  }
+}
+
+@each $key, $val in $colors {
+  .navbar-#{$key} {
+    @extend %navbar;
+    background-color: $val;
   }
 }
