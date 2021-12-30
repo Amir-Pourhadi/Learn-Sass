@@ -1,7 +1,12 @@
 @use "sass:math";
 
 $grid-columns: 12;
-$grid-gutter-width: 30px;
+$grid-gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+);
 
 // base layout
 .container {
@@ -14,6 +19,18 @@ $grid-gutter-width: 30px;
 .row {
   display: flex;
   flex-flow: row wrap;
+}
+
+// grid gaps
+@each $key, $val in $grid-gaps {
+  .gap-#{$key} > * {
+    padding: $val;
+  }
+
+  .gap-#{$key} {
+    margin-left: -$val;
+    margin-right: -$val;
+  }
 }
 
 // col classes
