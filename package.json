@@ -6,6 +6,9 @@
   "author": "Amir Pourhadi <AmirPourhadi@outlook.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "gulp"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-purgecss": "^4.1.3",
