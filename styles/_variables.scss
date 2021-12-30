@@ -1,8 +1,8 @@
 // colors
-$primary-color: #326dee;
-$secondary-color: #1ac888;
-$error-color: #d32752;
-$info-color: #f6c31c;
+$primary-color: #326dee !default;
+$secondary-color: #1ac888 !default;
+$error-color: #d32752 !default;
+$info-color: #f6c31c !default;
 
 // color pallette
 $colors: (
@@ -21,31 +21,19 @@ $colors: (
   "white": white,
 );
 
-/* @debug map-get($colors, "purple");
-@debug map-has-key($colors, "secondary");
-@debug map-has-key($colors, "tertiary");
-@debug map-remove($colors, "primary");
-@debug map-merge(
-  $colors,
-  (
-    "pink": #ffc0cb,
-  )
-);
-  */
-
 // spacing
-$base-spacing: 0.75rem;
+$base-spacing: 0.75rem !default;
 
 // borders
-$base-border-thickness: 1px;
-$base-border-radius: 20px;
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
 
 // box-shadow
-$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
 
 // font-size
-$base-font-size: 1rem;
-$font-size-sm: $base-font-size * 0.75;
-$font-size-lg: $base-font-size * 1.5;
-$font-size-xl: $base-font-size * 2;
-$font-size-xxl: $base-font-size * 3;
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.5 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
